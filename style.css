@@ -448,6 +448,16 @@ footer{
         width:80%;
         
     }
+    .container{
+        width:90%;
+        
+    }
+    .container h1{
+        width:100%;
+        font-size:2rem;
+        padding:0;
+        font-weight:500;
+    }
     .hero{
     
        
@@ -466,5 +476,13 @@ footer{
     }
     .hero h1,div{
         flex:1;
+    }
+    .connect-container{
+        display:block;
+        align-items:center;
+    }
+    #submit-btn{
+        background:#DD1AE1;
+        color:#fff;
     }
 }
