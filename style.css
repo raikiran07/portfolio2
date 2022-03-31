@@ -494,4 +494,9 @@ footer{
         margin:50px auto;
         margin-bottom:0;
     }
+    #mobile-nav-link p a{
+        text-decoration:none;
+        color:#DD1AE1;
+    }
+    
 }
