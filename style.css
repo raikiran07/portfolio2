@@ -486,4 +486,8 @@ footer{
         background:#DD1AE1;
         color:#fff;
     }
+    .tech h1{
+        margin:50px auto;
+        margin-bottom:0;
+    }
 }
