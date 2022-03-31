@@ -11,7 +11,8 @@
     box-sizing:border-box;
 }
 
-body{
+
+html,body{
     min-height:100vh;
     font-family:"poppins",sans-serif;
     width:100%;
@@ -415,6 +416,18 @@ footer{
         width:32px;
         height:32px;
     } */
+
+    .profile{
+        max-height:300px;
+        max-width:300px;
+        margin-top:5rem;
+        overflow:hidden;
+        border-radius:48%;
+        background-image:url("./assets/profile.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        border:2px solid white;
+    }
 
     .click{
         opacity:1;
