@@ -245,8 +245,9 @@ span{
 }
 
 .project-box .project-text{
-    width:60%;
+    width:90%;
     margin:1rem auto;
+    color:rgb(106, 106, 106);
 }
 
 .project .number{
@@ -351,9 +352,10 @@ textarea{
 footer{
     width:100%;
     text-align:center;
-    color:#fff;
+    color:rgb(106, 106, 106);
     background:#000;
     padding:3rem 0;
+    font-size:16px;
 }
 
 
