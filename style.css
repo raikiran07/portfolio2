@@ -144,6 +144,9 @@ nav ul li{
     max-height:500px;  */
    
    max-width:1000px;
+   width:300px;
+   padding:2rem;
+   margin:2rem;
    
     
     
@@ -384,7 +387,7 @@ footer{
        margin-top:5rem;
        overflow:hidden;
        border-radius:48%;
-       background-image:url("./assets/profile.jpg");
+       background-image:url("./assets/myProfile.jpg");
        background-size:cover;
        background-repeat:no-repeat;
        border:2px solid white;
