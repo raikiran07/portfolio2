@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" onsubmit="sendEmail();reset();return false;">
+        <input type="text" name="username" id="name" placeholder="enter name">
+        <input type="email" name="useremail" id="email" placeholder="enter email">
+        <button type="submit">submit</button>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        function sendEmail(){
+    Email.send({
+        
+        Host : "smtp.gmail.com",
+        Username : "kiranraicoder007@gmail.com",
+        Password : "840272029718E33597D41B06E41C44AF6897",
+        To : 'raikiran925@gmail.com',
+        From : document.getElementById("useremail").value,
+        Subject : document.getElementById("username").value,
+        Body : "this is dummy message"
+    }).then(
+      message => alert(message)
+    );
+}
+    </script>
+</body>
+</html>

@@ -172,19 +172,24 @@
                           
                         </p>
                     </div>
+                    
                     <div>
-                        <p>
-                            <input type="text" class="user-input" placeholder="Enter Your Name">
-                        </p>
-                        <p>
-                            <input type="email" class="user-input" placeholder="Enter Your Email">
-                        </p>
-                        <p>
-                            <textarea class="user-input" placeholder="Enter Your Message"></textarea>
-                        </p>
-                        <p>
-                            <button class="btn" id="submit-btn">SUBMIT</button>
-                        </p>
+                        <form  method="post" action="https://formspree.io/f/moqrgyzb">
+
+                            <p>
+                                <input type="text" class="user-input" id="username" placeholder="Enter Your Name" required>
+                            </p>
+                            <p>
+                                <input type="email" name="email" class="user-input" id="useremail" placeholder="Enter Your Email" required>
+                            </p>
+                            <p>
+                                <textarea class="user-input" name="message" id="usermessage" placeholder="Enter Your Message"></textarea>
+                            </p>
+                            <p>
+                                <button class="btn" id="submit-btn" type="submit">SUBMIT</button>
+                            </p>
+                        </form>
+                       
                         
                        
                         
@@ -196,6 +201,7 @@
         <p>Build with <span>love</span> @kiranrai</p>
     </footer>
     
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
