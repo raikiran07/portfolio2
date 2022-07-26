@@ -18,6 +18,7 @@ html,body{
     width:100%;
     overflow-x:hidden;
     scroll-behavior:smooth;
+    /* position:relative; */
 }
 
 .hero-container{
@@ -399,6 +400,27 @@ footer{
 /*hiding the mobile navbar*/
 .hide{
     display:none;
+}
+
+
+/* up arrows */
+
+.hero-container #up-arrow{
+    z-index:10;
+    position:fixed;
+    bottom:1rem;
+    right:1rem;
+}
+
+.hero-container #up-arrow img{
+    width:100%;
+    max-width:40px;
+    
+}
+
+.hero-container #up-arrow img:hover{
+    border-radius:50%;
+    box-shadow:1px 3px 20px #fa70fc;
 }
 
 
