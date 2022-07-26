@@ -2,8 +2,16 @@
 const menuBtn = document.getElementById("menu");
 const ulLinks = document.querySelector(".mobile-link");
 const showMenu = document.querySelector(".mobile-link");
+const hero = document.querySelector(".hero-container");
+const mode = document.querySelector(".mode-image");
+let lightMode = true;
 
-const img = ["./assets/menu.png","./assets/cross.png"];
+const heading = document.getElementById("header-heading");
+
+
+
+
+const img = ["./assets/menu.png","./assets/cross.png","./assets/sun.png","./assets/moon.png"];
 
 let showCross = true;
 
@@ -13,13 +21,15 @@ menuBtn.addEventListener("click",()=>{
     
     if(showCross){
         menuBtn.setAttribute("src",img[1]);
-        console.log(menuBtn);
+        // console.log(menuBtn);
+      
         showCross = false;
 
     }
     else{
         menuBtn.setAttribute("src",img[0]);
-        console.log(menuBtn);
+        // console.log(menuBtn);
+        
         showCross = true;
     }
 
@@ -42,3 +52,21 @@ menuBtn.addEventListener("click",()=>{
 //       message => alert(message)
 //     );
 // }
+
+
+mode.addEventListener("click",()=>{
+    if(lightMode){
+        mode.setAttribute("src",img[3]);
+        hero.classList.toggle("dark-mode");
+        heading.style.color="#fff";
+        lightMode = false;
+    }
+    else{
+        mode.setAttribute("src",img[2]);
+        hero.classList.toggle("dark-mode");
+        heading.style.color="#000";
+        lightMode = true;
+    }
+    
+    
+})

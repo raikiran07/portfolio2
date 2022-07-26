@@ -21,10 +21,11 @@ html,body{
 }
 
 .hero-container{
-    background:var(--primary);
+    background:#fff;;
     width:100%;
     overflow:hidden;
     position:relative;
+    transition:all .5s ease;
 }
 
 .hero-container nav{
@@ -71,6 +72,29 @@ nav a:hover::before {
     /* padding:15px; */
     color:#DD1AE1;
     
+}
+
+/* toggle of dark and light mode */
+.left{
+    display:flex;
+    align-items:center;
+    /* border:1px solid black; */
+}
+
+.left .mode-image{
+    animation:fadein 5s;
+}
+
+/* DARK MODE */
+.dark-mode{
+    background:#000;
+    color:#fff;
+}
+
+.mode-image{
+    margin-left:15px;
+    cursor:pointer;
+    width:25px;
 }
 
 .mobile-nav{
@@ -161,6 +185,7 @@ nav ul li{
     /* border:1px solid #fff; */
     padding-left:3rem;
     text-align:center;
+    height:100vh;
     
 }
 span{
@@ -169,8 +194,10 @@ span{
 
 .hero h1{
     /* flex:2; */
+    width:50%;
+    margin:0 auto;
     font-size:2rem;
-    color:#fff;
+    color:#000;
     text-align:center;
     font-weight:200;
     margin-top:-5rem;
@@ -362,8 +389,8 @@ textarea{
 footer{
     width:100%;
     text-align:center;
-    color:rgb(106, 106, 106);
-    background:#000;
+    color:#000;
+    background:rgba(196, 195, 195, 0.2);
     padding:3rem 0;
     font-size:16px;
 }
@@ -377,6 +404,12 @@ footer{
 
 
 @media only screen and (max-width:989px){
+   
+
+   
+    .hero{
+        height:auto;
+    }
 
   
     .hero h1{
@@ -408,6 +441,9 @@ footer{
 }
 
 @media only screen and (max-width:600px){
+
+    
+   
     .hero-container nav{
         display:none;
     }
@@ -441,18 +477,7 @@ footer{
         height:32px;
     } */
 
-    .profile{
-        /* max-height:300px;
-        max-width:300px;
-        margin-top:5rem;
-        overflow:hidden;
-        border-radius:48%;
-        background-image:url("./assets/myProfile.jpg");
-        background-size:cover;
-        background-repeat:no-repeat;
-        border:2px solid white; */
-
-    }
+    
 
     .click{
         opacity:1;
@@ -508,3 +533,9 @@ footer{
     }
     
 }
+
+/* animation for the image */
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
